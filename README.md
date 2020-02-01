@@ -1,18 +1,23 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
+
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://www.chistinelao.com">
+    <img alt="christine-logo" src="https://images.ctfassets.net/0xuxf7vbpo6x/1mSpIjZ3zpqZjq27eOL9wx/35d7400efb66f7b09749315512517b7d/logo.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby's default starter
+  christinelao.com 
 </h1>
+<p align="center"> 
+  My personal website, built with <a href="https://www.gatsbyjs.org/">Gastby</a> and hosted with <a href="https://www.netlify.com/">Netlify</a>
+</p>
+<img alt="Personal Website - Desktop" src="https://raw.githubusercontent.com/chlao/personal-website-gatsby/36d123f8179b98e57a1d1e4bcb939d3866e9bb26/github-assets/personal-website-desktop.png">
+<p align="center">
+  <img align="center" width="340" alt="Personal Website - Mobile" src="https://raw.githubusercontent.com/chlao/personal-website-gatsby/36d123f8179b98e57a1d1e4bcb939d3866e9bb26/github-assets/personal-website-mobile.png" align=>
+</p>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
-
-## 🚀 Quick start
+## 🚀 Gatsby's Quick start
 
 1.  **Create a Gatsby site.**
 
