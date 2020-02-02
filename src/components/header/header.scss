@@ -24,6 +24,9 @@ header {
     display: block;
     text-align: center;
     margin-top: 20px;
+    border: 0;
+    background: none;
+    outline: none;
     @include visible-md-down;
   }
 

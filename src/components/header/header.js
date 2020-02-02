@@ -14,7 +14,9 @@ const Header = () => {
 
   return (
     <header className={`header${open ? " header--open" : ""}`} >
-      <span className={`header__icon-menu ${open ? "icon-close" : "icon-bars"}`} onClick={() => { setOpen(!open)}}></span>
+      <button className={`header__icon-menu ${open ? "icon-close" : "icon-bars"}`}
+              onClick={() => { setOpen(!open)}}
+              onKeyDown={() => { setOpen(!open)}}></button>
       <LeftSideBar headerOpenState={open}/>
       <Logo className="logo logo--header"/>
       <NavMenu headerOpenState={open}/>
