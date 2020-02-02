@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { BLOCKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import { toMonthYear } from "../../utils/dateUtils"
 
 import "./experienceEntry.scss"
 
@@ -13,11 +14,17 @@ const ExperienceEntry = ({ jobEntry }) => {
     },
   }
 
+  const startDate = new Date(jobEntry.startDate)
+  const startDateAsMonthYear = toMonthYear(startDate)
+  // If there's no end date defined, assume that the experience entry is the
+  // most recent, and use 'Present' as the end date.
+  const endDateAsMonthYear = jobEntry.endDate ? toMonthYear(new Date(jobEntry.endDate)) : 'Present'
+
   return (
     <div className="experience__entry">
       <h3 className="entry__company">{jobEntry.company}</h3>
-      <h4 className="entry__position-location">{`${jobEntry.jobTitle} — ${jobEntry.location}`}</h4>
-      <p className="entry__duration">{jobEntry.duration}</p>
+      <h4 className="entry__position-location">{jobEntry.jobTitle} — {jobEntry.location}</h4>
+      <p className="entry__duration">{startDateAsMonthYear} - {endDateAsMonthYear}</p>
       { documentToReactComponents(jobEntry.description.json, renderOptions) }
     </div>
   )
@@ -30,7 +37,7 @@ ExperienceEntry.propTypes = {
       company: PropTypes.string.isRequired,
       jobTitle: PropTypes.string.isRequired,
       location: PropTypes.string.isRequired,
-      duration: PropTypes.string.isRequired,
+      startDate: PropTypes.string.isRequired,
       description: PropTypes.shape({
         json: PropTypes.shape({
           data: PropTypes.object.isRequired,

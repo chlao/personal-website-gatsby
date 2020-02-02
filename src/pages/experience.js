@@ -8,16 +8,22 @@ const Experience = () => {
   const data = useStaticQuery(
     graphql`
       query {
-        allContentfulJobExperienceEntry {
+        allContentfulJobExperienceEntry(
+          sort: {
+            fields: startDate
+            order: DESC
+          }
+        ){
           edges {
             node {
               company
               jobTitle
               location
-              duration
               description {
                 json
               }
+              startDate
+              endDate
             }
           }
         }
