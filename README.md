@@ -10,14 +10,66 @@
 <p align="center"> 
   My personal website, built with <a href="https://www.gatsbyjs.org/">Gastby</a> and hosted with <a href="https://www.netlify.com/">Netlify</a>
 </p>
+<h3 align="center"> Deployment Status </h3>
+<p align="center">
+  <a href="https://app.netlify.com/sites/zen-snyder-3b031f/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/f2c39d59-36da-43ad-8d92-f43ae77ad81f/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
 <img alt="Personal Website - Desktop" src="https://raw.githubusercontent.com/chlao/personal-website-gatsby/36d123f8179b98e57a1d1e4bcb939d3866e9bb26/github-assets/personal-website-desktop.png">
 <p align="center">
-  <img align="center" width="340" alt="Personal Website - Mobile" src="https://raw.githubusercontent.com/chlao/personal-website-gatsby/36d123f8179b98e57a1d1e4bcb939d3866e9bb26/github-assets/personal-website-mobile.png" align=>
+  <img width="340" alt="Personal Website - Mobile" src="https://raw.githubusercontent.com/chlao/personal-website-gatsby/36d123f8179b98e57a1d1e4bcb939d3866e9bb26/github-assets/personal-website-mobile.png" align=>
 </p>
 
+
+## 💾 Set up 
+
+1.  **Install the Gastby CLI**
+
+    Use the Gatsby CLI to create a new site, specifying the default starter.
+
+    ```sh
+    npm install -g gatsby-cli
+    ```
+
+2.  **Install dependencies**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    npm install 
+    ```
+    
+3.  **Start the development server **
+
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    gatsby develop 
+    ```
+    
+## 🏃 Run in production mode 
+
+1. **Create a production build**
+    
+    ```sh
+    gatsby build
+    ```
+    
+2. **Serve the production build locally**
+
+    ```sh
+    gatsby serve
+    ```
+
+<br/>
+<hr/>
+<br/>
+    
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 
-## 🚀 Gatsby's Quick start
+## 🚀  To start your own site with Gatsby
+### Quick start
 
 1.  **Create a Gatsby site.**
 
@@ -28,7 +80,7 @@
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
 
-1.  **Start developing.**
+2.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -37,7 +89,7 @@
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+3.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
